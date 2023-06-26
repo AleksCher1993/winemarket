@@ -686,14 +686,14 @@ body._touch .menu__list > li._active .menu_arrow {
   position: relative;
 }
 
-.bestwines__img > img {
+.bestwines__img img {
   width: 100%;
   position: relative;
   z-index: 1;
 }
 
 .no-webp .bestwines__img::after {
-  background: url("../img/Vector (1).png"); }
+  background: center/contain no-repeat url("../img/Vector (1).png"); }
 
 .bestwines__img::after {
   content: "";
@@ -730,7 +730,7 @@ body._touch .menu__list > li._active .menu_arrow {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -982,7 +982,7 @@ body._touch .menu__list > li._active .menu_arrow {
   text-align: center;
 }
 
-.slide-swiper__img > img {
+.slide-swiper__img img {
   border-radius: 70px;
   max-width: 100%;
   margin: 0;
@@ -1394,12 +1394,10 @@ body._touch .menu__list > li._active .menu_arrow {
 }
 
 .no-webp .contact__item > ul::after {
-  background: url("../img/Vector (1).png"); }
+  background: url("../img/Vector (1).png") no-repeat; }
 
 .contact__item > ul::after {
   content: "";
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 400px;
   height: 400px;
   position: absolute;
@@ -1520,7 +1518,7 @@ body._touch .menu__list > li._active .menu_arrow {
   text-align: center;
 }
 
-.busket__none_img > img {
+.busket__none_img img {
   width: 100%;
 }
 
@@ -1785,9 +1783,9 @@ body._touch .menu__list > li._active .menu_arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2962,10 +2960,10 @@ h3.item__none {
 
 .webp .about::after { background: url("../img/Subtract (1).png"); }
 
-.webp .bestwines__img::after { background: url("../img/Vector (1).png"); }
+.webp .bestwines__img::after { background: center/contain no-repeat url("../img/Vector (1).png"); }
 
 .webp .footer { background: url("../img/Group 1000005086.png"); }
 
 .webp .footer__messengers_svg::before { background: url("../img/Vector (2).png"); }
 
-.webp .contact__item > ul::after { background: url("../img/Vector (1).png"); }
+.webp .contact__item > ul::after { background: url("../img/Vector (1).png") no-repeat; }
